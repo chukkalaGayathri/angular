@@ -1,0 +1,23 @@
+<div class="container">
+
+    <!-- testautomatch.component.html -->
+    <div class="container mt-4">
+        <form [formGroup]="patientForm">
+            <div class="mb-3">
+                <label for="additionalInfo" class="form-label">Additional Factors/Symptoms</label>
+                <mat-form-field>
+                    <input type="text" placeholder="Symptoms" matInput [matAutocomplete]="auto"
+                        formControlName="additionalInfo">
+                    <mat-autocomplete #auto="matAutocomplete">
+                        <mat-option *ngFor="let symptom of filteredSymptoms" [value]="symptom">
+                            {{ symptom }}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </div>
+
+            <button type="button" class="btn btn-primary" (click)="submitForm()">Submit</button>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,92 @@
+<mat-toolbar class="app-toolbar" color="primary">
+    <button mat-icon-button aria-label="Menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <h1>Healthcare Dashboard</h1>
+
+
+    <!-- Additional elements -->
+    <button mat-button>
+        <mat-icon>notifications</mat-icon>
+        Notifications
+    </button>
+
+    <button mat-button>
+        <mat-icon>settings</mat-icon>
+        Settings
+    </button>
+
+    <span class="spacer"></span>
+
+    <button mat-button style="align-content: end;">
+        <mat-icon>help</mat-icon>
+        Help
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="languageMenu">
+        <mat-icon>language</mat-icon>
+        Language
+    </button>
+    <mat-menu #languageMenu="matMenu">
+        <button mat-menu-item>English</button>
+        <button mat-menu-item>Korean</button>
+        <button mat-menu-item>Malay</button>
+        <button mat-menu-item>Turkish</button>
+        <button mat-menu-item>French</button>
+        <button mat-menu-item>German</button>
+        <button mat-menu-item>Spanish</button>
+    </mat-menu>
+
+    <!-- Theme button -->
+    <button mat-button [matMenuTriggerFor]="themeMenu">
+        <mat-icon>palette</mat-icon>
+        Theme
+    </button>
+    <mat-menu #themeMenu="matMenu">
+        <button mat-menu-item>Theme 1</button>
+        <button mat-menu-item>Theme 2</button>
+        <button mat-menu-item>Theme 3</button>
+    </mat-menu>
+
+    <!-- Profile picture -->
+    <div class="profile-pic">
+        <img src="https://mtcus.com/wp-content/uploads/2016/06/doctors-profile-img1.png" alt="Profile Picture">
+    </div>
+</mat-toolbar>
+
+
+<mat-sidenav-container autosize>
+    <mat-sidenav mode="side">
+
+
+        <!-- <a routerLink="dashboard" mat-list-item>
+            <span class="entry">
+                <mat-icon>house</mat-icon>
+                <span>Dashboard</span>
+
+            </span>
+        </a><br>
+
+        <a mat-list-item>
+            <span class="entry">
+                <mat-icon>house</mat-icon>
+                <span>Form field consultation</span>
+            </span>
+        </a>
+        <br>
+        <mat-divider></mat-divider>
+  -->
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <!-- Update your HTML structure with Bootstrap grid classes -->
+        <h1>Welcome Dr. Vkraft</h1>
+        <!-- <app-doctorform></app-doctorform> -->
+
+
+        <div class="container" style="background-color: rgba(255, 255, 255, 0.8);  
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <!-- <router-outlet></router-outlet> -->
+            <app-patientform></app-patientform>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

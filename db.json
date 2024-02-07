@@ -1,0 +1,398 @@
+{
+    "bloodGroups": [
+        {
+            "id": 1,
+            "group": "A+"
+        },
+        {
+            "id": 2,
+            "group": "A-"
+        },
+        {
+            "id": 3,
+            "group": "B+"
+        },
+        {
+            "id": 4,
+            "group": "B-"
+        },
+        {
+            "id": 5,
+            "group": "O+"
+        },
+        {
+            "id": 6,
+            "group": "O-"
+        },
+        {
+            "id": 7,
+            "group": "AB+"
+        },
+        {
+            "id": 8,
+            "group": "AB-"
+        }
+    ],
+    "ages": [
+        {
+            "id": 1,
+            "range": "0-5"
+        },
+        {
+            "id": 2,
+            "range": "5-10"
+        },
+        {
+            "id": 3,
+            "range": "10-15"
+        },
+        {
+            "id": 4,
+            "range": "15-20"
+        },
+        {
+            "id": 5,
+            "range": "20-25"
+        },
+        {
+            "id": 6,
+            "range": "25-30"
+        },
+        {
+            "id": 7,
+            "range": "30-35"
+        },
+        {
+            "id": 8,
+            "range": "35-40"
+        },
+        {
+            "id": 9,
+            "range": "40-45"
+        },
+        {
+            "id": 10,
+            "range": "45-50"
+        },
+        {
+            "id": 11,
+            "range": "50-55"
+        },
+        {
+            "id": 12,
+            "range": "55-60"
+        },
+        {
+            "id": 13,
+            "range": "60-65"
+        },
+        {
+            "id": 14,
+            "range": "65-70"
+        },
+        {
+            "id": 15,
+            "range": "70-75"
+        },
+        {
+            "id": 16,
+            "range": "75-80"
+        },
+        {
+            "id": 17,
+            "range": "80-85"
+        },
+        {
+            "id": 18,
+            "range": "85-90"
+        },
+        {
+            "id": 19,
+            "range": "90-95"
+        },
+        {
+            "id": 20,
+            "range": "95-100"
+        }
+    ],
+    "symptoms": [
+        {
+            "id": 1,
+            "name": "Fever"
+        },
+        {
+            "id": 2,
+            "name": "Chills"
+        },
+        {
+            "id": 3,
+            "name": "Fatigue"
+        },
+        {
+            "id": 4,
+            "name": "Weakness"
+        },
+        {
+            "id": 5,
+            "name": "Sweating"
+        },
+        {
+            "id": 6,
+            "name": "Unintended weight loss"
+        },
+        {
+            "id": 7,
+            "name": "Cough"
+        },
+        {
+            "id": 8,
+            "name": "Shortness of breath"
+        },
+        {
+            "id": 9,
+            "name": "Chest pain"
+        },
+        {
+            "id": 10,
+            "name": "Palpitations"
+        },
+        {
+            "id": 11,
+            "name": "Dizziness"
+        },
+        {
+            "id": 12,
+            "name": "Fainting or syncope"
+        },
+        {
+            "id": 13,
+            "name": "Headache"
+        },
+        {
+            "id": 14,
+            "name": "Vision changes"
+        },
+        {
+            "id": 15,
+            "name": "Nausea"
+        },
+        {
+            "id": 16,
+            "name": "Vomiting"
+        },
+        {
+            "id": 17,
+            "name": "Abdominal pain"
+        },
+        {
+            "id": 18,
+            "name": "Diarrhea"
+        },
+        {
+            "id": 19,
+            "name": "Constipation"
+        },
+        {
+            "id": 20,
+            "name": "Changes in bowel habits"
+        },
+        {
+            "id": 21,
+            "name": "Blood in stool"
+        },
+        {
+            "id": 22,
+            "name": "Blood in urine"
+        },
+        {
+            "id": 23,
+            "name": "Frequent urination"
+        },
+        {
+            "id": 24,
+            "name": "Painful urination"
+        },
+        {
+            "id": 25,
+            "name": "Back pain"
+        },
+        {
+            "id": 26,
+            "name": "Joint pain"
+        },
+        {
+            "id": 27,
+            "name": "Muscle pain or stiffness"
+        },
+        {
+            "id": 28,
+            "name": "Swelling or edema"
+        },
+        {
+            "id": 29,
+            "name": "Skin changes or rash"
+        },
+        {
+            "id": 30,
+            "name": "Bruising or bleeding"
+        },
+        {
+            "id": 31,
+            "name": "Difficulty swallowing"
+        },
+        {
+            "id": 32,
+            "name": "Sore throat"
+        },
+        {
+            "id": 33,
+            "name": "Earache"
+        },
+        {
+            "id": 34,
+            "name": "Hearing loss"
+        },
+        {
+            "id": 35,
+            "name": "Changes in taste or smell"
+        },
+        {
+            "id": 36,
+            "name": "Numbness or tingling"
+        },
+        {
+            "id": 37,
+            "name": "Memory loss or confusion"
+        },
+        {
+            "id": 38,
+            "name": "Mood changes or depression"
+        },
+        {
+            "id": 39,
+            "name": "Sleep disturbances"
+        },
+        {
+            "id": 40,
+            "name": "Changes in appetite"
+        },
+        {
+            "id": 41,
+            "name": "Excessive thirst"
+        },
+        {
+            "id": 42,
+            "name": "Excessive hunger"
+        },
+        {
+            "id": 43,
+            "name": "Excessive urination"
+        },
+        {
+            "id": 44,
+            "name": "Menstrual changes"
+        },
+        {
+            "id": 45,
+            "name": "Erectile dysfunction"
+        },
+        {
+            "id": 46,
+            "name": "Pain or discomfort during intercourse"
+        },
+        {
+            "id": 47,
+            "name": "Respiratory symptoms (wheezing, coughing, shortness of breath)"
+        },
+        {
+            "id": 48,
+            "name": "Skin discoloration"
+        },
+        {
+            "id": 49,
+            "name": "Lesions or lumps"
+        },
+        {
+            "id": 50,
+            "name": "Difficulty in concentrating or focusing"
+        }
+    ],
+    "allergies": [
+        {
+            "id": 1,
+            "type": "Pollen"
+        },
+        {
+            "id": 2,
+            "type": "Dust mites"
+        },
+        {
+            "id": 3,
+            "type": "Animal dander"
+        },
+        {
+            "id": 4,
+            "type": "Insect stings"
+        },
+        {
+            "id": 5,
+            "type": "Mold"
+        },
+        {
+            "id": 6,
+            "type": "Food (e.g., nuts, shellfish)"
+        },
+        {
+            "id": 7,
+            "type": "Medications (e.g., penicillin)"
+        },
+        {
+            "id": 8,
+            "type": "Latex"
+        },
+        {
+            "id": 9,
+            "type": "Insect bites"
+        },
+        {
+            "id": 10,
+            "type": "Certain fruits"
+        },
+        {
+            "id": 11,
+            "type": "Certain vegetables"
+        },
+        {
+            "id": 12,
+            "type": "Peanuts"
+        },
+        {
+            "id": 13,
+            "type": "Soy"
+        },
+        {
+            "id": 14,
+            "type": "Milk"
+        },
+        {
+            "id": 15,
+            "type": "Eggs"
+        },
+        {
+            "id": 16,
+            "type": "Fish"
+        },
+        {
+            "id": 17,
+            "type": "Shellfish"
+        },
+        {
+            "id": 18,
+            "type": "Wheat"
+        },
+        {
+            "id": 19,
+            "type": "Other environmental allergens"
+        }
+    ]
+}

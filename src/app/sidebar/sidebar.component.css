@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sidenav Styles */
+mat-sidenav {
+    background-color: #2c3e50;
+    /* Dark blue background */
+    color: #ecf0f1;
+    /* Light text color */
+}
+
+mat-sidenav-content {
+    padding: 20px;
+}
+
+/* Header Styles */
+mat-toolbar {
+    background-color: #3498db;
+    /* Header background color */
+}
+
+mat-icon {
+    color: #fff;
+    /* Header icon color */
+    font-size: 24px;
+}
+
+h1 {
+    color: #ecf0f1;
+    /* Header text color */
+    margin-left: 10px;
+}
+
+/* Nav Item Styles */
+a.mat-list-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ecf0f1;
+    /* Nav item text color */
+}
+
+a.mat-list-item:hover {
+    background-color: #34495e;
+    /* Darker background on hover */
+}
+
+mat-icon {
+    margin-right: 10px;
+}
+
+/* Button Styles */
+button.mat-icon-button {
+    background-color: #3498db;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+}
+
+/* Chart Card Styles */
+mat-card {
+    margin-bottom: 20px;
+}
+
+/* Animation Styles */
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+button.mat-icon-button {
+    animation: rotateAnimation 0.5s ease-in-out;
+}
+
+/* Profile Pic Styles */
+.profile-pic {
+    margin-left: 800px;
+    /* Add margin for spacing */
+    border-radius: 50%;
+    /* Make it round */
+    width: 40px;
+    /* Set the width of the profile picture */
+    height: 40px;
+    /* Set the height of the profile picture */
+}
+
+.profile-pic img {
+    width: 100%;
+    /* Make sure the image fills the container */
+    height: 100%;
+    object-fit: cover;
+    margin-left: 10px;
+    /* Adjust margin as needed */
+    margin-right: 10px;
+    /* Maintain the aspect ratio */
+}
+
+
+
+.profile-pic {
+    margin-left: 10px;
+    /* Adjust margin as needed */
+    margin-right: 10px;
+    /* Adjust margin as needed */
+}
+
+/* Sidenav Gradient Animation */
+.mat-sidenav {
+    background: linear-gradient(45deg, #efc405, #0ea2e7);
+    /* Initial gradient colors */
+    /* animation: gradientAnimation 8s infinite alternate; Gradient animation */
+    width: 20%;
+    height: 150%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    }
+
+    25% {
+        background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+    }
+
+    50% {
+        background: linear-gradient(45deg, #fad0c4, #ff9a9e);
+    }
+
+    75% {
+        background: linear-gradient(45deg, #fbc2eb, #a18cd1);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    }
+}
+
+
+.mat-sidenav-content {
+    background-image: url('https://cdn.wallpapersafari.com/27/91/cW8PDw.jpg');
+    /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+    background-size: cover;
+    /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Add other styling as needed */
+    height: max-content;
+    width: auto;
+}
+
+.app-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    /* For macOS/iOS Safari */
+    top: 0;
+    /* Sets the sticky toolbar to be on top */
+    z-index: 1000;
+    /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.spacer {
+    flex: 1;
+}

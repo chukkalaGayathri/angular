@@ -1,0 +1,43 @@
+<!-- patient-form.component.html -->
+<form (ngSubmit)="submitForm()" #patientForm="ngForm">
+    <label for="age">Age:</label>
+    <mat-select id="age" name="age" [(ngModel)]="patient.age" required>
+        <mat-option value="0-5">0-5 years</mat-option>
+        <mat-option value="6-15">6-15 years</mat-option>
+        <mat-option value="16-30">16-30 years</mat-option>
+        <!-- Add more age ranges as needed -->
+    </mat-select>
+
+    <label for="gender">Gender:</label>
+    <mat-select id="gender" name="gender" [(ngModel)]="patient.gender" required>
+        <mat-option value="male">Male</mat-option>
+        <mat-option value="female">Female</mat-option>
+    </mat-select>
+
+    <label for="symptoms">Symptoms:</label>
+    <mat-form-field>
+        <mat-label>Symptoms</mat-label>
+        <input matInput id="symptoms" name="symptoms" [(ngModel)]="patient.symptoms" [matAutocomplete]="auto"
+            [formControl]="symptomsControl" required>
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let symptom of filteredSymptoms | async" [value]="symptom">
+                {{ symptom }}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+
+    <button mat-raised-button type="submit" [disabled]="!patientForm.valid">Submit</button>
+</form>
+
+<!-- Display Results -->
+<div *ngIf="showResults">
+    <h3>Potential Diseases:</h3>
+    <ul>
+        <li *ngFor="let disease of diseases">{{ disease }}</li>
+    </ul>
+
+    <h3>Treatments:</h3>
+    <ul>
+        <li *ngFor="let treatment of treatments">{{ treatment }}</li>
+    </ul>
+</div>
